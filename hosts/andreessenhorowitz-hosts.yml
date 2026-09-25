@@ -1,0 +1,94 @@
+generated: '2026-09-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 5
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - data
+  - other
+  - source
+  - website
+hosts:
+- host: a16z.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Security
+  - Leadership
+  - Website
+  - APIReference
+  - GettingStarted
+  - Support
+  - Blog
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - docs
+  - hosting
+  vendor: netlify
+  registrable_domain: a16z.com
+  role: website
+  relation: own
+- host: api.a16z.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: a16z.com
+  role: api
+  relation: own
+- host: build.a16z.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: a16z.com
+  role: other
+  relation: own
+- host: data.a16z.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  title: a16z - Sign In
+  status: 200
+  registrable_domain: a16z.com
+  role: data
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: jobs.a16z.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: a16z.com
+  role: other
+  relation: own

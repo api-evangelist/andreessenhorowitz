@@ -1,23 +1,87 @@
 aid: andreessenhorowitz
+
 name: Andreessenhorowitz
-description: 'Andreessenhorowitz is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/03/a16z-Yoast-LI.png
+
+description: 'Andreessen Horowitz (a16z) is a leading venture capital firm investing in technology companies across various sectors including AI, bio‑health, consumer, crypto, enterprise, fintech, and infrastructure. The firm publishes insights, research, and resources for founders and developers, and maintains a robust online presence with sections for portfolio, team, focus areas, news, and a dedicated developer portal offering guides, tooling insights, and API resources.'
+
 url: https://raw.githubusercontent.com/api-evangelist/andreessenhorowitz/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
-- Company
-apis: []
+- Venture Capital
+- Technology
+- Investment
+- AI
+- Bio-Health
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: https://a16z.com/security-policy
+- type: SecurityTxt
+  url: well-known/andreessenhorowitz-security.txt
+- type: WellKnown
+  url: well-known/andreessenhorowitz-well-known.yml
+- type: Hosts
+  url: hosts/andreessenhorowitz-hosts.yml
+- type: Vendors
+  url: vendors/andreessenhorowitz-vendors.yml
+- type: Leadership
+  url: https://a16z.com/team/
+- type: VulnerabilityDisclosure
+  url: security/andreessenhorowitz-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/andreessenhorowitz-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/andreessenhorowitz
+  url: https://a16z.com
+
+- type: APIReference
+  url: https://a16z.com/api
+- type: GettingStarted
+  url: https://a16z.com/about
+- type: Support
+  url: https://a16z.com/supporting-the-open-source-ai-community/
+- type: Blog
+  url: https://a16z.com/news-content
+- type: GitHubOrganization
+  url: https://github.com/a16z
+- type: TermsOfService
+  url: https://a16z.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://a16z.com/privacy-policy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: "Developer portal at https://a16z.com/enterprise/developer-tooling provides no OpenAPI or other machine‑readable contract."
+  evidence:
+    - url: https://a16z.com/api
+      status: 301
+  checked: 2026-09-24
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
